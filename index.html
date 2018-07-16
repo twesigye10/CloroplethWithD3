@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Cloropleth world map with D3</title>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+    <style type="text/css">
+    .title {
+        text-anchor: middle;
+        font-size: 20px;
+        fill: #5E5E5E;
+    }
+    path {
+        stroke: white;
+        stroke-width: 1px;
+    }   
+    body {
+        padding-top: 20px;
+    } 
+    .legendText {
+        font-size: 15px;
+        font-weight: 400;
+        fill: #8C8C8C;
+        text-align: center;
+    }
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        border-radius: 1px;
+    }
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.9);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+    /* Style northward tooltips differently */
+    
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript" src = "js/js.js">   </script>
+</body>
+
+</html>
